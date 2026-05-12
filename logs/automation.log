@@ -1,0 +1,71 @@
+2026-05-06 10:29:03 INFO  LoginTest:22 - Started Validate Login Test
+2026-05-06 10:29:03 INFO  LoginTest:26 - Entering the Username & Password
+2026-05-06 10:29:04 INFO  LoginTest:22 - Started Validate Login Test
+2026-05-06 10:29:04 INFO  LoginTest:26 - Entering the Username & Password
+2026-05-06 10:29:07 INFO  LoginTest:28 - Login Successful
+2026-05-06 10:29:08 INFO  LoginTest:28 - Login Successful
+2026-05-06 11:49:30 INFO  LoginTest:23 - Started Validate Login Test
+2026-05-06 11:49:30 INFO  LoginTest:27 - Entering the Username & Password
+2026-05-06 11:49:33 INFO  LoginTest:29 - Login Successful
+2026-05-06 11:51:13 INFO  LoginTest:23 - Started Validate Login Test
+2026-05-06 11:51:13 INFO  LoginTest:27 - Entering the Username & Password
+2026-05-06 11:51:16 INFO  LoginTest:29 - Login Successful
+2026-05-06 11:51:25 INFO  AccountTest:42 - Title Test Executed
+2026-05-06 11:51:25 INFO  AccountTest:48 - Title Test Completed
+2026-05-06 11:59:18 INFO  AccountTest:57 - Test Case -- validateAccountNameTest is Executed 
+2026-05-06 11:59:25 INFO  AccountTest:45 - Title Test Executed
+2026-05-06 11:59:26 INFO  AccountTest:51 - Title Test Completed
+2026-05-06 13:41:22 INFO  AccountTest:57 - Test Case -- validateAccountNameTest is Executed 
+2026-05-07 09:08:27 INFO  AccountTest:57 - Test Case -- validateAccountNameTest is Executed 
+2026-05-07 09:17:05 INFO  AccountTest:57 - Test Case -- validateAccountNameTest is Executed 
+2026-05-07 09:17:06 INFO  AccountTest:57 - Test Case -- validateAccountNameTest is Executed 
+2026-05-07 09:21:52 INFO  AccountTest:57 - Test Case -- validateAccountNameTest is Executed 
+2026-05-07 09:27:02 INFO  AccountTest:57 - Test Case -- validateAccountNameTest is Executed 
+2026-05-07 09:49:59 INFO  AccountTest:75 - Account Details Test Executed
+2026-05-07 09:52:57 INFO  AccountTest:75 - Account Details Test Executed
+2026-05-07 09:56:11 INFO  AccountTest:75 - Account Details Test Executed
+2026-05-07 10:23:50 INFO  AccountTest:89 - Test Case Account Details Field Values Started
+2026-05-07 10:57:13 INFO  ChangePassTest:45 - Change Password Page Title Test Executed
+2026-05-07 10:57:15 INFO  ChangePassTest:49 - Change Password Page Title Test Passed
+2026-05-07 11:04:53 INFO  ChangePassTest:58 - Change Password fields validation Test Executed
+2026-05-07 11:04:56 INFO  ChangePassTest:65 - Change Password fields validation Test Passed
+2026-05-07 11:27:13 INFO  ChangePassTest:71 - Change Password functionality validation Test Executed
+2026-05-07 11:30:35 INFO  ChangePassTest:71 - Change Password functionality validation Test Executed
+2026-05-07 11:32:53 INFO  ChangePassTest:71 - Change Password functionality validation Test Executed
+2026-05-07 11:33:42 INFO  ChangePassTest:71 - Change Password functionality validation Test Executed
+2026-05-07 11:57:20 INFO  AddressBookTest:61 - Address Book  Entries  Test Executed
+2026-05-07 11:57:50 INFO  AddressBookTest:61 - Address Book  Entries  Test Executed
+2026-05-07 12:01:16 INFO  AddressBookTest:61 - Address Book  Entries  Test Executed
+2026-05-07 12:01:16 INFO  AddressBookTest:61 - Address Book  Entries  Test Executed
+2026-05-07 12:05:10 INFO  AddressBookTest:61 - Address Book  Entries  Test Executed
+2026-05-07 16:47:01 INFO  HomeTest:87 - Validate Header MenuTest Started
+2026-05-07 17:08:38 INFO  HomeTest:100 - Validate Search Bar Categories Test Started
+2026-05-07 17:10:25 INFO  HomeTest:100 - Validate Search Bar Categories Test Started
+2026-05-07 17:28:25 INFO  HomeTest:115 - Validate Currency Drop down values Test Started
+2026-05-07 17:38:35 INFO  HomeTest:115 - Validate Currency Drop down values Test Started
+2026-05-07 17:48:12 INFO  HomeTest:115 - Validate Currency Drop down values Test Started
+2026-05-07 17:52:37 INFO  HomeTest:115 - Validate Currency Drop down values Test Started
+2026-05-08 09:50:25 INFO  HomeTest:130 - Validate Social Media Icons Test Started
+2026-05-08 09:50:25 INFO  HomeTest:130 - Validate Social Media Icons Test Started
+2026-05-08 09:51:22 INFO  HomeTest:130 - Validate Social Media Icons Test Started
+2026-05-08 09:54:42 INFO  HomeTest:130 - Validate Social Media Icons Test Started
+2026-05-08 09:56:46 INFO  HomeTest:130 - Validate Social Media Icons Test Started
+2026-05-08 10:39:03 INFO  HomeTest:130 - Validate Social Media Icons Test Started
+2026-05-08 10:39:07 INFO  HomeTest:134 - Validate Social Media Icons Test Completed
+2026-05-09 16:16:56 INFO  HomeTest:58 - Validate Logo Test Started
+2026-05-09 16:16:56 INFO  HomeTest:64 - Validate Logo Test Completed
+2026-05-09 16:18:19 INFO  HomeTest:70 - Validate WelCome MenuTest Started
+2026-05-09 16:21:43 INFO  HomeTest:61 - Validate Logo Test Started
+2026-05-09 16:21:43 INFO  HomeTest:67 - Validate Logo Test Completed
+2026-05-09 16:28:07 INFO  HomeTest:118 - Validate Currency Drop down values Test Started
+2026-05-09 16:28:07 INFO  HomeTest:126 - Validate Currency Drop down values Test Completed
+2026-05-09 16:31:19 INFO  HomeTest:118 - Validate Currency Drop down values Test Started
+2026-05-09 16:31:20 INFO  HomeTest:126 - Validate Currency Drop down values Test Completed
+2026-05-10 10:35:10 INFO  ProductsPageTest:71 - Validate Product Page Sort By Drop Down Test Case Started
+2026-05-10 10:37:25 INFO  ProductsPageTest:71 - Validate Product Page Sort By Drop Down Test Case Started
+2026-05-11 10:12:04 INFO  ProductsPageTest:60 - Validate Product Page Title Test Case Started
+2026-05-11 10:17:37 INFO  ProductsPageTest:60 - Validate Product Page Title Test Case Started
+2026-05-11 10:19:56 INFO  ProductsPageTest:60 - Validate Product Page Title Test Case Started
+2026-05-11 10:20:01 INFO  ProductsPageTest:65 - Validate Product Page Title Test Case Completed
+2026-05-11 11:53:43 INFO  ProductsPageTest:85 - Navigate to Product Page Test Case Started
+2026-05-11 11:54:26 INFO  ProductsPageTest:85 - Navigate to Product Page Test Case Started

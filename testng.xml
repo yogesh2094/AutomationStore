@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+
+<suite name="Parallel Browser Suite">
+
+  <test name="ChromeTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            
+            <class name="com.qa.TestCases.HomeTest"/>
+        </classes>
+    </test>
+    
+     
+
+    
+
+</suite>
