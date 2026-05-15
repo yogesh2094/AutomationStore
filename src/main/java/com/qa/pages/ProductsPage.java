@@ -16,11 +16,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.qa.base.TestBase;
+
 import com.qa.util.TestUtil;
 import com.qa.util.WaitUtility;
 
-public class ProductsPage extends TestBase {
+public class ProductsPage {
 
 	WebDriver driver;
 	
@@ -40,7 +40,8 @@ public class ProductsPage extends TestBase {
 	WebElement product;
 	
 	
-	WaitUtility util =new WaitUtility(getDriver());
+	WaitUtility util;
+	Actions ac;
 	
 	// Constructor
     public ProductsPage(WebDriver driver) 
@@ -49,6 +50,9 @@ public class ProductsPage extends TestBase {
         this.driver = driver;
 
         PageFactory.initElements(driver, this);
+        util = new WaitUtility(driver);
+        ac = new Actions(driver);
+
 
     }
     
@@ -58,8 +62,7 @@ public class ProductsPage extends TestBase {
     {
     	logo.click();
     	
-    	Actions ac=new Actions(getDriver());
-    	ac.moveToElement(fragrance).perform();
+    	    	ac.moveToElement(fragrance).perform();
     	//fragrance.click();
     	util.elementToBeClickable(Menfragrance, 20); // Wait Utility Method
     	Menfragrance.click();

@@ -9,7 +9,6 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.qa.base.TestBase;
 import com.qa.pages.AccountsPage;
 import com.qa.pages.AddressBookPage;
 import com.qa.pages.ChangePasswordPage;

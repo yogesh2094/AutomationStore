@@ -13,10 +13,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.qa.base.TestBase;
+
 import com.qa.util.WaitUtility;
 
-public class ProductDetailsPage extends TestBase {
+public class ProductDetailsPage  {
 	
 	WebDriver driver;
 	
@@ -38,7 +38,7 @@ public class ProductDetailsPage extends TestBase {
 	@FindBy(id="option316")
 	WebElement sizeDropDown;
 	
-	WaitUtility util =new WaitUtility(getDriver());
+	WaitUtility util;
 	
 	// Constructor
     public ProductDetailsPage(WebDriver driver) 
@@ -47,6 +47,7 @@ public class ProductDetailsPage extends TestBase {
         this.driver = driver;
 
         PageFactory.initElements(driver, this);
+        util = new WaitUtility(driver);
 
     }
     

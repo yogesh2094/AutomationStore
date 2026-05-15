@@ -1,11 +1,11 @@
-package com.qa.Listeners;
+package Listeners;
 
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.qa.base.TestBase;
+import com.qa.TestCases.TestBase;
 import com.qa.util.ExtentManager;
 import com.qa.util.ScreenshotUtil;
 

@@ -11,13 +11,13 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.qa.Listeners.TestListener;
-import com.qa.base.TestBase;
 import com.qa.pages.AccountsPage;
 import com.qa.pages.AddressBookPage;
 import com.qa.pages.ChangePasswordPage;
 import com.qa.pages.HomePage;
 import com.qa.pages.LoginPage;
+
+import Listeners.TestListener;
 
 @Listeners(TestListener.class)
 

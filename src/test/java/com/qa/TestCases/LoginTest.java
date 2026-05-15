@@ -2,7 +2,6 @@ package com.qa.TestCases;
 
 import org.testng.annotations.Test;
 
-import com.qa.base.TestBase;
 import com.qa.pages.AccountsPage;
 import com.qa.pages.HomePage;
 import com.qa.pages.LoginPage;

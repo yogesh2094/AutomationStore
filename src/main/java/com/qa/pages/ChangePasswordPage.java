@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.qa.base.TestBase;
 
-public class ChangePasswordPage extends TestBase{
+
+public class ChangePasswordPage{
 	WebDriver driver;
 	@FindBy(xpath="//ul[@class='nav-dash']//a[@href='https://automationteststore.com/index.php?rt=account/password']")
 	WebElement changePass;

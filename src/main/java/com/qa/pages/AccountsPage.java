@@ -11,9 +11,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.qa.base.TestBase;
 
-public class AccountsPage extends TestBase{
+
+public class AccountsPage {
 	
 	 WebDriver driver;
 	@FindBy(xpath="//span[@class='subtext']")

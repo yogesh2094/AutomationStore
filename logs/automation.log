@@ -69,3 +69,25 @@
 2026-05-11 10:20:01 INFO  ProductsPageTest:65 - Validate Product Page Title Test Case Completed
 2026-05-11 11:53:43 INFO  ProductsPageTest:85 - Navigate to Product Page Test Case Started
 2026-05-11 11:54:26 INFO  ProductsPageTest:85 - Navigate to Product Page Test Case Started
+2026-05-15 16:53:51 INFO  HomeTest:119 - Validate Currency Drop down values Test Started
+2026-05-15 16:53:53 INFO  HomeTest:127 - Validate Currency Drop down values Test Completed
+2026-05-15 16:54:50 INFO  HomeTest:91 - Validate Header MenuTest Started
+2026-05-15 16:54:50 INFO  HomeTest:98 - Validate Header MenuTest Completed
+2026-05-15 16:55:00 INFO  HomeTest:62 - Validate Logo Test Started
+2026-05-15 16:55:00 INFO  HomeTest:68 - Validate Logo Test Completed
+2026-05-15 16:55:16 INFO  HomeTest:74 - Validate WelCome MenuTest Started
+2026-05-15 16:55:56 INFO  HomeTest:104 - Validate Search Bar Categories Test Started
+2026-05-15 16:55:57 INFO  HomeTest:112 - Validate Search Bar Categories Test Completed
+2026-05-15 16:56:06 INFO  HomeTest:134 - Validate Social Media Icons Test Started
+2026-05-15 16:56:23 INFO  HomeTest:138 - Validate Social Media Icons Test Completed
+2026-05-15 18:02:48 INFO  HomeTest:119 - Validate Currency Drop down values Test Started
+2026-05-15 18:02:48 INFO  HomeTest:127 - Validate Currency Drop down values Test Completed
+2026-05-15 18:03:24 INFO  HomeTest:91 - Validate Header MenuTest Started
+2026-05-15 18:03:24 INFO  HomeTest:98 - Validate Header MenuTest Completed
+2026-05-15 18:03:32 INFO  HomeTest:62 - Validate Logo Test Started
+2026-05-15 18:03:34 INFO  HomeTest:68 - Validate Logo Test Completed
+2026-05-15 18:03:42 INFO  HomeTest:74 - Validate WelCome MenuTest Started
+2026-05-15 18:04:13 INFO  HomeTest:104 - Validate Search Bar Categories Test Started
+2026-05-15 18:04:13 INFO  HomeTest:112 - Validate Search Bar Categories Test Completed
+2026-05-15 18:04:22 INFO  HomeTest:134 - Validate Social Media Icons Test Started
+2026-05-15 18:04:34 INFO  HomeTest:138 - Validate Social Media Icons Test Completed
