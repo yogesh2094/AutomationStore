@@ -75,11 +75,14 @@
     <artifactId>webdrivermanager</artifactId>
     <version>5.8.0</version>
 </dependency>
-  	<dependency>
-  		<groupId>DemoWebShop</groupId>
-  		<artifactId>Ecommerce</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
+  	
+  	<!-- Source: https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.1.2</version>
+    <scope>compile</scope>
+</dependency>
   	
   	
     <!-- Log4j2 Core -->
