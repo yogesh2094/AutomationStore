@@ -56,7 +56,7 @@ public class HomeTest extends TestBase {
 	        hpage=new HomePage(getDriver());
 	    }
 	 
-	 @Test
+	 @Test(groups= {"smoke"})
 	 public void validateLogoTest()
 	 {
 		 logger.info("Validate Logo Test Started");
@@ -68,7 +68,7 @@ public class HomeTest extends TestBase {
 		    logger.info("Validate Logo Test Completed");
 	 }
 	 
-	 @Test
+	 @Test(groups= {"smoke"})
 	 public void validateMenuListTest()
 	 {
 		 logger.info("Validate WelCome MenuTest Started");
@@ -85,7 +85,7 @@ public class HomeTest extends TestBase {
 		 logger.info("Validate WelCome MenuTest Completed");
 	 }
 	 
-	 @Test
+	 @Test(groups= {"smoke"})
 	 public void validateHeaderMenuTest()
 	 {
 		 logger.info("Validate Header MenuTest Started");

@@ -41,7 +41,7 @@ public class ChangePassTest extends TestBase {
 	        cppage=new ChangePasswordPage(getDriver());
 	    }
 
-	 @Test
+	 @Test (groups= {"smoke"})
 	 public void validateTitleTest()
 	 {
 		 logger.info("Change Password Page Title Test Executed");
@@ -51,7 +51,7 @@ public class ChangePassTest extends TestBase {
 		 logger.info("Change Password Page Title Test Passed");
 	 }
 	 
-	 @Test
+	 @Test (groups= {"smoke"})
 	 public void validatePassFieldsTest()
 	 {
 		 logger.info("Change Password fields validation Test Executed");

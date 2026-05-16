@@ -6,6 +6,13 @@
 
   <test name="ChromeTest">
         <parameter name="browser" value="chrome"/>
+        <groups>
+        <run>
+        <include name="smoke"></include>
+        </run>
+        
+        
+        </groups>
         <classes>
             
             <class name="com.qa.TestCases.HomeTest"/>

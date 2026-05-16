@@ -16,7 +16,7 @@ public class LoginTest extends TestBase {
 		super();
 	}
 	
-	@Test
+	@Test(groups= {"smoke"})
 	public void validateLoginTest()
 	{
 		logger.info("Started Validate Login Test");
