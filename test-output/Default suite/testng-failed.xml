@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.TestCases.ProductDetailsTest">
+      <class name="com.qa.TestCases.HomeTest">
         <methods>
-          <include name="validateTotalPriceWithSize"/>
-          <include name="initialization"/>
           <include name="setup"/>
+          <include name="validateMenuListTest"/>
+          <include name="tearDown"/>
+          <include name="initialization"/>
         </methods>
-      </class> <!-- com.qa.TestCases.ProductDetailsTest -->
+      </class> <!-- com.qa.TestCases.HomeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

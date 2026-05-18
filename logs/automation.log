@@ -91,3 +91,19 @@
 2026-05-15 18:04:13 INFO  HomeTest:112 - Validate Search Bar Categories Test Completed
 2026-05-15 18:04:22 INFO  HomeTest:134 - Validate Social Media Icons Test Started
 2026-05-15 18:04:34 INFO  HomeTest:138 - Validate Social Media Icons Test Completed
+2026-05-16 15:57:06 INFO  HomeTest:62 - Validate Logo Test Started
+2026-05-16 15:57:06 INFO  HomeTest:68 - Validate Logo Test Completed
+2026-05-16 16:09:14 INFO  HomeTest:74 - Validate WelCome MenuTest Started
+2026-05-16 17:12:25 INFO  HomeTest:94 - Validate Header MenuTest Started
+2026-05-16 17:12:25 INFO  HomeTest:65 - Validate Logo Test Started
+2026-05-16 17:12:25 INFO  HomeTest:77 - Validate WelCome MenuTest Started
+2026-05-16 17:25:42 INFO  HomeTest:97 - Validate Header MenuTest Started
+2026-05-16 17:25:42 INFO  HomeTest:104 - Validate Header MenuTest Completed
+2026-05-16 17:25:51 INFO  HomeTest:66 - Validate Logo Test Started
+2026-05-16 17:25:53 INFO  HomeTest:72 - Validate Logo Test Completed
+2026-05-16 17:26:08 INFO  HomeTest:79 - Validate WelCome MenuTest Started
+2026-05-18 14:39:59 INFO  HomeTest:97 - Validate Header MenuTest Started
+2026-05-18 14:39:59 INFO  HomeTest:104 - Validate Header MenuTest Completed
+2026-05-18 14:40:11 INFO  HomeTest:66 - Validate Logo Test Started
+2026-05-18 14:40:11 INFO  HomeTest:72 - Validate Logo Test Completed
+2026-05-18 14:40:24 INFO  HomeTest:79 - Validate WelCome MenuTest Started

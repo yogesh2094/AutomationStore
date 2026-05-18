@@ -24,7 +24,7 @@ public class AccountTest extends TestBase{
 		super();
 	}
 	
-	 @BeforeMethod
+	 
 	    public void setup() {
 
 	        // ❌ DO NOT call initialization() here
@@ -40,9 +40,10 @@ public class AccountTest extends TestBase{
 	        apage = new AccountsPage(getDriver());
 	    }
 
-	 //@Test
+	 @Test
 	 public void validateTitleTest()
 	 {
+		 setup();
 		 logger.info("Title Test Executed");
 		 
 		 String title=apage.validatePageTitle();
@@ -55,6 +56,7 @@ public class AccountTest extends TestBase{
 	 @Test
 	 public void validateAccountNameTest()
 	 {
+		 setup();
 		 logger.info("Test Case -- validateAccountNameTest is Executed ");
 		 
 		 List<String> expectedLinks=Arrays.asList("Edit account details","Change password","Manage Address Book",
@@ -73,6 +75,7 @@ public class AccountTest extends TestBase{
 	 @Test
 	 public void validateAccountDetailsTest()
 	 {
+		 setup();
 		 logger.info("Account Details Test Executed");
 		 
 		 List<String> expectedFields=Arrays.asList("Login Name:","First Name:","Last Name:","E-Mail:","Telephone:","Fax:");
@@ -85,6 +88,7 @@ public class AccountTest extends TestBase{
 	@Test
 	public void validateAccountFieldValues()
 	{
+		setup();
 		logger.info("Test Case Account Details Field Values Started");
 		
 		Map<String, String> expectedValues=new LinkedHashMap<>();

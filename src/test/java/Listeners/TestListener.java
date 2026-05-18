@@ -1,5 +1,9 @@
 package Listeners;
 
+import java.io.IOException;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
@@ -12,14 +16,16 @@ import com.qa.util.ScreenshotUtil;
 public class TestListener implements ITestListener{
 	
 	ExtentReports extent = ExtentManager.getReportObject();
-    ExtentTest test;
+	//ThreadLocal<ExtentTest> test;
+	
+	ThreadLocal<ExtentTest> test = new ThreadLocal<>();
     
 //	@Override
 //    public void onTestStart(ITestResult result) {
 //        System.out.println("Test Started : " + result.getName());
 //    }
     
-    public void onTestStart(ITestResult result) {
+   /* public void onTestStart(ITestResult result) {
         test = extent.createTest(result.getMethod().getMethodName());
     }
 
@@ -28,20 +34,74 @@ public class TestListener implements ITestListener{
     }
 
     public void onTestFailure(ITestResult result) {
-        test.fail(result.getThrowable());
-        
-        String path = ScreenshotUtil.captureScreenshot(
-                TestBase.getDriver(),
-                result.getName());
+    	
+    	 test.fail(result.getThrowable());
 
-        System.out.println("Screenshot saved at: " + path);
-        
-        test.addScreenCaptureFromPath(path);
-    }
+    	    WebDriver driver = TestBase.getDriver();
+
+    	    if(driver != null)
+    	    {
+    	        String path = ScreenshotUtil.captureScreenshot(driver, result.getName());
+
+    	        System.out.println("Screenshot saved at: " + path);
+
+    	        test.addScreenCaptureFromPath(path);
+    	    }
+    	    else
+    	    {
+    	        System.out.println("Driver is null. Screenshot not captured.");
+    	    }
+            }
 
     public void onFinish(org.testng.ITestContext context) {
         extent.flush();
     }
+    */
+	
+	 @Override
+	    public void onTestStart(ITestResult result) {
+
+	        ExtentTest extentTest =
+	                extent.createTest(result.getMethod().getMethodName());
+
+	        test.set(extentTest);
+	    }
+
+	    @Override
+	    public void onTestSuccess(ITestResult result) {
+
+	        test.get().pass("Test Passed");
+	    }
+
+	    @Override
+	    public void onTestFailure(ITestResult result) {
+
+	    	test.get().fail(result.getThrowable());
+
+	    	 WebDriver driver = TestBase.getDriver();
+
+	    	   	    	    if (driver != null) {
+
+	    	        String path = ScreenshotUtil.captureScreenshot(
+	    	                driver,
+	    	                result.getMethod().getMethodName());
+
+	    	        System.out.println("Screenshot saved at: " + path);
+
+	    	        test.get().addScreenCaptureFromPath(path);
+
+	    	    } else {
+
+	    	        System.out.println("Driver is null. Screenshot not captured.");
+	    	    }
+	       	    }
+
+	    @Override
+	    public void onFinish(ITestContext context) {
+
+	        extent.flush();
+	    }
+	
   
 
 }

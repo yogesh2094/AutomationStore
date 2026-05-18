@@ -52,7 +52,7 @@ public class TestBase {
 	
 
     @Parameters("browser")
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void initialization(@Optional("chrome")String browser) {
 
     	logger=LogManager.getLogger(this.getClass());
@@ -81,7 +81,7 @@ public class TestBase {
 
         if(getDriver() != null) {
             getDriver().quit();
-            driver.remove();
+           // driver.remove();
         }
     }
 

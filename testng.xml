@@ -16,6 +16,9 @@
         <classes>
             
             <class name="com.qa.TestCases.HomeTest"/>
+            <class name="com.qa.TestCases.AccountTest"/>
+            
+           
         </classes>
     </test>
     

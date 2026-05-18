@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -23,6 +25,7 @@ import Listeners.TestListener;
 
 public class HomeTest extends TestBase {
 
+	//private static final Logger logger = LogManager.getLogger(HomeTest.class);
 	LoginPage lpage;
 	
 	AccountsPage apage;
@@ -32,12 +35,12 @@ public class HomeTest extends TestBase {
 	AddressBookPage abpage;
 	HomePage hpage;
 	
-	HomeTest()
+	public HomeTest()
 	{
 		super();
 	}
 	
-	 @BeforeMethod
+	 
 	    public void setup() {
 
 	        // ❌ DO NOT call initialization() here
@@ -59,6 +62,7 @@ public class HomeTest extends TestBase {
 	 @Test(groups= {"smoke"})
 	 public void validateLogoTest()
 	 {
+		 setup();
 		 logger.info("Validate Logo Test Started");
 
 		    boolean flag = hpage.validateLogo();
@@ -71,6 +75,7 @@ public class HomeTest extends TestBase {
 	 @Test(groups= {"smoke"})
 	 public void validateMenuListTest()
 	 {
+		 setup();
 		 logger.info("Validate WelCome MenuTest Started");
 		 List<String> expectedLinks=Arrays.asList("Account Dashboard", "My wish list","Edit account details","Change password","Manage Address Book","Order history",
 			 		"Transaction history",
@@ -88,6 +93,7 @@ public class HomeTest extends TestBase {
 	 @Test(groups= {"smoke"})
 	 public void validateHeaderMenuTest()
 	 {
+		 setup();
 		 logger.info("Validate Header MenuTest Started");
 		 List<String> expectedMenu=Arrays.asList("SPECIALS","ACCOUNT","CART","CHECKOUT");
 		 
@@ -101,6 +107,7 @@ public class HomeTest extends TestBase {
 	 @Test
 	 public void validateSearchBarCatTest()
 	 {
+		 setup();
 		 logger.info("Validate Search Bar Categories Test Started");
 		 
 		 List<String> expectedCat=Arrays.asList("All Categories","Apparel & accessories","Makeup","Skincare","Fragrance","Men","Hair Care","Books");
@@ -116,6 +123,7 @@ public class HomeTest extends TestBase {
 	 @Test
 	 public void validateCurrencyDropValuesTest()
 	 {
+		 setup();
 		 logger.info("Validate Currency Drop down values Test Started");
 		 
 		 List<String> expectedValues=Arrays.asList("€ EURO","£ POUND STERLING","$ US DOLLAR");
@@ -131,6 +139,7 @@ public class HomeTest extends TestBase {
 	 @Test
 	 public void validateSocialMediaIconsTest()
 	 {
+		 setup();
 		 logger.info("Validate Social Media Icons Test Started");
 		 
 		 hpage.validateSocialMediaIcons();
@@ -141,6 +150,7 @@ public class HomeTest extends TestBase {
 	 @Test
 	 public void validateFeatureProductSectionTest()
 	 {
+		 setup();
 		boolean flag= hpage.validateFeaturedProductsDisplayed();
 		Assert.assertFalse(flag);
 		
@@ -153,6 +163,7 @@ public class HomeTest extends TestBase {
 	 @Test
 	 public void validateFooterSectionItems()
 	 {
+		 setup();
 		boolean flag= hpage.validateFooterSectionDisplayed();
 		Assert.assertTrue(flag);
 		
@@ -167,6 +178,7 @@ public class HomeTest extends TestBase {
 	 @Test
 	 public void validateContactUsSectionTest()
 	 {
+		 setup();
 		String contactUs= hpage.validateContactUsSectionDisplayed();
 		Assert.assertEquals(contactUs, "CONTACT US", "Contact Us Text is not Matching!!");
 		
@@ -180,12 +192,14 @@ public class HomeTest extends TestBase {
 	 @Test
 	 public void validatefooterLinksTest()
 	 {
+		 setup();
 		 hpage.validateFooterLinks();
 	 }
 	 
 	 @Test
 	 public void validateBrandsLinksTest()
 	 {
+		 setup();
 		 hpage.checkBrandLinks();
 	 }
 }
