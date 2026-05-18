@@ -3,15 +3,13 @@
 <suite name="Failed suite [Parallel Browser Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="ChromeTest(failed)">
     <parameter name="browser" value="chrome"/>
-    <groups>
-      <run>
-        <include name="smoke"/>
-      </run>
-    </groups>
     <classes>
       <class name="com.qa.TestCases.HomeTest">
         <methods>
+          <include name="validatefooterLinksTest"/>
+          <include name="validateFeatureProductSectionTest"/>
           <include name="validateMenuListTest"/>
+          <include name="tearDown"/>
           <include name="initialization"/>
         </methods>
       </class> <!-- com.qa.TestCases.HomeTest -->

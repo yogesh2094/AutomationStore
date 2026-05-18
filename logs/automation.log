@@ -107,3 +107,20 @@
 2026-05-18 14:40:11 INFO  HomeTest:66 - Validate Logo Test Started
 2026-05-18 14:40:11 INFO  HomeTest:72 - Validate Logo Test Completed
 2026-05-18 14:40:24 INFO  HomeTest:79 - Validate WelCome MenuTest Started
+2026-05-18 15:08:15 INFO  HomeTest:127 - Validate Currency Drop down values Test Started
+2026-05-18 15:08:15 INFO  HomeTest:135 - Validate Currency Drop down values Test Completed
+2026-05-18 15:08:48 INFO  HomeTest:97 - Validate Header MenuTest Started
+2026-05-18 15:08:50 INFO  HomeTest:104 - Validate Header MenuTest Completed
+2026-05-18 15:08:59 INFO  HomeTest:66 - Validate Logo Test Started
+2026-05-18 15:08:59 INFO  HomeTest:72 - Validate Logo Test Completed
+2026-05-18 15:09:07 INFO  HomeTest:79 - Validate WelCome MenuTest Started
+2026-05-18 15:09:38 INFO  HomeTest:111 - Validate Search Bar Categories Test Started
+2026-05-18 15:09:38 INFO  HomeTest:119 - Validate Search Bar Categories Test Completed
+2026-05-18 15:09:46 INFO  HomeTest:143 - Validate Social Media Icons Test Started
+2026-05-18 15:09:57 INFO  HomeTest:147 - Validate Social Media Icons Test Completed
+2026-05-18 15:10:30 INFO  AccountTest:79 - Account Details Test Executed
+2026-05-18 15:10:41 INFO  AccountTest:92 - Test Case Account Details Field Values Started
+2026-05-18 15:10:44 INFO  AccountTest:106 - Test Case Account Details Field Values Passed
+2026-05-18 15:10:51 INFO  AccountTest:60 - Test Case -- validateAccountNameTest is Executed 
+2026-05-18 15:11:19 INFO  AccountTest:47 - Title Test Executed
+2026-05-18 15:11:19 INFO  AccountTest:53 - Title Test Completed
