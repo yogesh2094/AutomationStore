@@ -8,48 +8,11 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Parallel Browser Suite</th></tr>
-<tr><td><a href="#t0">ChromeTest</a></td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">260,935</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">48,164</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Parallel Browser Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ChromeTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.qa.TestCases.HomeTest</td><td><a href="#m0">validateFeatureProductSectionTest</a></td><td rowspan="1">1779097098778</td><td rowspan="1">7870</td></tr><tr class="failedeven"><td><a href="#m1">validateMenuListTest</a></td><td rowspan="1">1779097144393</td><td rowspan="1">23720</td></tr><tr class="failedeven"><td><a href="#m2">validatefooterLinksTest</a></td><td rowspan="1">1779097206138</td><td rowspan="1">16982</td></tr><tr><th colspan="4">ChromeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.qa.TestCases.AccountTest</td><td><a href="#m3">validateAccountDetailsTest</a></td><td rowspan="1">1779097229214</td><td rowspan="1">5294</td></tr><tr class="passedeven"><td><a href="#m4">validateAccountFieldValues</a></td><td rowspan="1">1779097239931</td><td rowspan="1">4913</td></tr><tr class="passedeven"><td><a href="#m5">validateAccountNameTest</a></td><td rowspan="1">1779097249784</td><td rowspan="1">3511</td></tr><tr class="passedeven"><td><a href="#m6">validateTitleTest</a></td><td rowspan="1">1779097275815</td><td rowspan="1">4154</td></tr><tr class="passedodd"><td rowspan="8">com.qa.TestCases.HomeTest</td><td><a href="#m7">validateBrandsLinksTest</a></td><td rowspan="1">1779097028671</td><td rowspan="1">45904</td></tr><tr class="passedodd"><td><a href="#m8">validateContactUsSectionTest</a></td><td rowspan="1">1779097080601</td><td rowspan="1">5582</td></tr><tr class="passedodd"><td><a href="#m9">validateCurrencyDropValuesTest</a></td><td rowspan="1">1779097092128</td><td rowspan="1">3866</td></tr><tr class="passedodd"><td><a href="#m10">validateFooterSectionItems</a></td><td rowspan="1">1779097111877</td><td rowspan="1">7947</td></tr><tr class="passedodd"><td><a href="#m11">validateHeaderMenuTest</a></td><td rowspan="1">1779097126913</td><td rowspan="1">3558</td></tr><tr class="passedodd"><td><a href="#m12">validateLogoTest</a></td><td rowspan="1">1779097135760</td><td rowspan="1">3430</td></tr><tr class="passedodd"><td><a href="#m13">validateSearchBarCatTest</a></td><td rowspan="1">1779097173642</td><td rowspan="1">5065</td></tr><tr class="passedodd"><td><a href="#m14">validateSocialMediaIconsTest</a></td><td rowspan="1">1779097183470</td><td rowspan="1">14085</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qa.TestCases.ShoppingCartTest</td><td><a href="#m0">validateGrandTotalTest</a></td><td rowspan="1">1779190528654</td><td rowspan="1">22022</td></tr></tbody>
 </table>
-<h2>ChromeTest</h2><h3 id="m0">com.qa.TestCases.HomeTest#validateFeatureProductSectionTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [false] but found [true]
-	at com.qa.TestCases.HomeTest.validateFeatureProductSectionTest(HomeTest.java:155)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.qa.TestCases.HomeTest#validateMenuListTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63819}, goog:processID: 3444, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63819/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d8cce40b0f7edae9f45483e1ee91c009
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.qa.pages.HomePage.validateWelcomeMenuList(HomePage.java:122)
-	at com.qa.TestCases.HomeTest.validateMenuListTest(HomeTest.java:86)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.qa.TestCases.HomeTest#validatefooterLinksTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 4
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
-	at java.base/java.util.Objects.checkIndex(Objects.java:359)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at com.qa.pages.HomePage.validateFooterLinks(HomePage.java:321)
-	at com.qa.TestCases.HomeTest.validatefooterLinksTest(HomeTest.java:196)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.qa.TestCases.AccountTest#validateAccountDetailsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.qa.TestCases.AccountTest#validateAccountFieldValues</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.qa.TestCases.AccountTest#validateAccountNameTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.qa.TestCases.AccountTest#validateTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.qa.TestCases.HomeTest#validateBrandsLinksTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.qa.TestCases.HomeTest#validateContactUsSectionTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">com.qa.TestCases.HomeTest#validateCurrencyDropValuesTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">com.qa.TestCases.HomeTest#validateFooterSectionItems</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">com.qa.TestCases.HomeTest#validateHeaderMenuTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">com.qa.TestCases.HomeTest#validateLogoTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">com.qa.TestCases.HomeTest#validateSearchBarCatTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m14">com.qa.TestCases.HomeTest#validateSocialMediaIconsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.qa.TestCases.ShoppingCartTest#validateGrandTotalTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

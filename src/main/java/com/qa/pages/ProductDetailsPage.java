@@ -38,6 +38,9 @@ public class ProductDetailsPage  {
 	@FindBy(id="option316")
 	WebElement sizeDropDown;
 	
+	@FindBy(xpath="//a[@class='cart']")
+	WebElement cartBtn;
+	
 	WaitUtility util;
 	
 	// Constructor
@@ -116,5 +119,10 @@ public class ProductDetailsPage  {
                         .isEmpty());
 
         return TotalPrice.getText().trim();
+    }
+    
+    public void clickonCartBtn()
+    {
+    	cartBtn.click();
     }
 }

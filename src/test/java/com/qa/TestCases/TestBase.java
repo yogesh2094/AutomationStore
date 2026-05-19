@@ -76,7 +76,7 @@ public class TestBase {
         getDriver().get("https://automationteststore.com/");
     }
 	
-    @AfterMethod
+   // @AfterMethod
     public void tearDown() {
 
         if(getDriver() != null) {
