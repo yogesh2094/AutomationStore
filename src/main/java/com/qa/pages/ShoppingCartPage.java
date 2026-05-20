@@ -46,6 +46,9 @@ WebDriver driver;
 	@FindBy(xpath="//table[@id='totals_table']/tbody/tr[3]/td[2]")
 	WebElement grandTotal;
 	
+	@FindBy(xpath="//a[@id='cart_checkout2']")
+	WebElement checkoutBtn;
+	
 	WaitUtility util;
 	
 	// Constructor
@@ -161,6 +164,11 @@ WebDriver driver;
         System.out.println("Actual Total is :"+actualTotal);
         
         return actualTotal;
+    }
+    
+    public void clickonCheckoutBtn()
+    {
+    	checkoutBtn.click();
     }
     	
 }

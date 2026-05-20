@@ -1,22 +1,21 @@
 package com.qa.TestCases;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.qa.pages.AccountsPage;
 import com.qa.pages.AddressBookPage;
 import com.qa.pages.ChangePasswordPage;
+import com.qa.pages.CheckoutAddressPage;
 import com.qa.pages.CheckoutPage;
+import com.qa.pages.DeliveryInfoPage;
 import com.qa.pages.HomePage;
 import com.qa.pages.LoginPage;
 import com.qa.pages.ProductDetailsPage;
 import com.qa.pages.ProductsPage;
 import com.qa.pages.ShoppingCartPage;
 
-public class CheckoutTest extends TestBase{
+public class DeliveryInfoTest extends TestBase {
 	
 	LoginPage lpage;
 	
@@ -30,8 +29,10 @@ public class CheckoutTest extends TestBase{
 	ShoppingCartPage spage;
 	ProductDetailsPage pdpage;
 	CheckoutPage cpage;
+	DeliveryInfoPage dpage;
+	CheckoutAddressPage capage;
 	
-	public CheckoutTest()
+	public DeliveryInfoTest()
 	{
 		super();
 	}
@@ -63,56 +64,45 @@ public class CheckoutTest extends TestBase{
 		        ppage.getProductDetailsPage();
 		        pdpage.clickonCartBtn();
 	        
-	        spage.clickonCheckoutBtn();
+		        spage.clickonCheckoutBtn();
+		        dpage=new DeliveryInfoPage(getDriver());
+		        capage=new CheckoutAddressPage(getDriver());
+		        cpage.clickOnEditShippingBtn();
 	        
 	    }
-	 
-	    @Test
-	    public void validateTitleTest()
-	    {
-	    	setup();
-	    	String title=cpage.validatePageTitle();
-	    	
-	    	Assert.assertEquals(title, "Checkout Confirmation");
-	    }
 
+	    
 	    @Test
-	    public void validateShippingDetailsTest()
+	    public void validateDeliveryInfoPageTitleTest()
 	    {
 	    	setup();
-	    	Map<String, String> expectedValues=new LinkedHashMap<>();
-	    	
-	    	expectedValues.put("ShippingName", "Yogesh Sarode");
-	    	expectedValues.put("PhoneNumber", "8.987876751E9");
-	    	
-	    	expectedValues.put("ShippingCompany", "testsg");
-	    	expectedValues.put("ShippingAdd1", "Airoli Bristol 400708.0");
-	    	expectedValues.put("ShippingCountry", "United Kingdom");
-	    	
-	    	expectedValues.put("ShipRate", "Flat Shipping Rate");
-	    	
-	    	Map<String, String> actualValues=cpage.getShippingNameDetails();
-	    	
-	    	Assert.assertEquals(actualValues, expectedValues);
+	    	String title=dpage.validateDeliveryInfoPageTitle();
+	    	Assert.assertEquals(title, "Delivery Information");
 	    }
 	    
 	    @Test
-	    public void validatePaymentDetailsTest()
+	    public void clickonChangeAddBtnTest()
 	    {
 	    	setup();
-	    	Map<String, String> expectedValues=new LinkedHashMap<>();
 	    	
-	    	expectedValues.put("PaymentName", "Yogesh Sarode");
-	    	expectedValues.put("PhoneNumber", "8.987876751E9");
+	    	capage=dpage.clickonChangeAddBtn();
+	    }
+	    
+	    @Test
+	    public void validateShippingrateTest()
+	    {   
+	    	setup();
+	    	String label=dpage.getShippingLabel();
+	    	Assert.assertEquals(label, "Flat Shipping Rate");
 	    	
-	    	expectedValues.put("PaymentCom", "testsg");
-	    	expectedValues.put("PaymentAdd1", "Airoli Bristol 400708.0");
-	    	expectedValues.put("PaymentCountry", "United Kingdom");
-	    	
-	    	expectedValues.put("PaymentMode", "Cash On Delivery");
-	    	
-	    	Map<String, String> actualValues=cpage.getPaymentDetails();	   
-	    	
-	    	Assert.assertEquals(actualValues, expectedValues);
+	    	String rate=dpage.getShippingRate();
+	    	Assert.assertEquals(rate, "$2.00");
+	    }
+	    
+	    @Test
+	    public void clickOnContinueBtn()
+	    {
+	    	setup();
+	    	dpage.addCommentsandContinue();
 	    }
 }
