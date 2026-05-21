@@ -5,9 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.qa.util.BaseFormPage;
 import com.qa.util.WaitUtility;
 
-public class CheckoutAddressPage {
+public class CheckoutAddressPage extends BaseFormPage {
 	
 WebDriver driver;
 	
@@ -20,13 +21,19 @@ WebDriver driver;
 	@FindBy(xpath="//button[@class='btn btn-orange pull-right']")
 	WebElement continueBtn;
 	
+	@FindBy(name="company")
+	WebElement com;
+	
+	@FindBy(xpath="//button[@class='btn btn-orange pull-right lock-on-click']")
+	WebElement continueBtn1;
+	
 	WaitUtility util;
 	
 	// Constructor
     public CheckoutAddressPage(WebDriver driver) 
     { 
 
-        this.driver = driver;
+        super(driver);
 
         PageFactory.initElements(driver, this);
         util = new WaitUtility(driver);
@@ -57,4 +64,18 @@ WebDriver driver;
     	return new CheckoutPage(driver);
     }
 
+    public void addNewAddress(String fn,
+            String ln,
+            String company1,
+            String add,
+            String city1,
+            String state,
+            String postcode1)
+    {
+    	com.clear();
+    	com.sendKeys(company1);
+    	
+    	enterUserDetails(fn, ln, add, city1, state, postcode1);
+    	continueBtn1.click();
+    }
 }

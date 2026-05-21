@@ -10,9 +10,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.qa.util.CommonProductPage;
 import com.qa.util.WaitUtility;
 
-public class CheckoutPage {
+public class CheckoutPage extends CommonProductPage {
 
 	WebDriver driver;
 	
@@ -49,13 +50,19 @@ public class CheckoutPage {
 	@FindBy(xpath="//table[@class='table confirm_payment_options']/tbody/tr//a[@class='btn btn-default btn-xs']")
 	WebElement editPayment;
 	
+	@FindBy(xpath="//table[@class='table confirm_products']/tbody/tr/td[2]/a")
+	List<WebElement> allCheckProNames;
+	
+	@FindBy(xpath="//table[@class='table table-striped table-bordered']/tbody/tr[3]/td[2]")
+	WebElement totalAmount;
+	
 	WaitUtility util;
 	
 	// Constructor
     public CheckoutPage(WebDriver driver) 
     { 
 
-        this.driver = driver;
+        super(driver);
 
         PageFactory.initElements(driver, this);
         util = new WaitUtility(driver);
@@ -140,5 +147,15 @@ public class CheckoutPage {
     public void clickOnEditPaymentBtn()
     {
     	editPayment.click();
+    }
+    
+    public List<String> getCheckoutProducts()
+    {
+        return getAllProductsNames(allCheckProNames);
+    }
+    
+    public double getCheckoutTotal()
+    {
+    	return getProductPriceTotal(totalAmount);
     }
 }

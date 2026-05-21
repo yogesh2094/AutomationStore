@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-20T17:10:45 IST" name="Default suite" finished-at="2026-05-20T17:11:13 IST" duration-ms="28432">
+  <suite started-at="2026-05-21T17:58:25 IST" name="Default suite" finished-at="2026-05-21T17:59:16 IST" duration-ms="51036">
     <groups>
     </groups>
-    <test started-at="2026-05-20T17:10:45 IST" name="Default test" finished-at="2026-05-20T17:11:13 IST" duration-ms="28432">
-      <class name="com.qa.TestCases.CheckoutAddressTest">
-        <test-method is-config="true" signature="initialization(java.lang.String)[pri:0, instance:com.qa.TestCases.CheckoutAddressTest@385c9627]" started-at="2026-05-20T17:10:45 IST" name="initialization" finished-at="2026-05-20T17:10:51 IST" duration-ms="6346" status="PASS">
+    <test started-at="2026-05-21T17:58:25 IST" name="Default test" finished-at="2026-05-21T17:59:16 IST" duration-ms="51036">
+      <class name="com.qa.TestCases.CheckoutTest">
+        <test-method is-config="true" signature="initialization(java.lang.String)[pri:0, instance:com.qa.TestCases.CheckoutTest@217ed35e]" started-at="2026-05-21T17:58:25 IST" name="initialization" finished-at="2026-05-21T17:58:38 IST" duration-ms="12626" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method signature="validateAddressBookEntriesTest()[pri:0, instance:com.qa.TestCases.CheckoutAddressTest@385c9627]" started-at="2026-05-20T17:10:51 IST" name="validateAddressBookEntriesTest" finished-at="2026-05-20T17:11:13 IST" duration-ms="22004" status="PASS">
+        <test-method signature="validateTotalAmountMatchesTest()[pri:0, instance:com.qa.TestCases.CheckoutTest@217ed35e]" started-at="2026-05-21T17:58:38 IST" name="validateTotalAmountMatchesTest" finished-at="2026-05-21T17:59:16 IST" duration-ms="38335" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateAddressBookEntriesTest -->
-      </class> <!-- com.qa.TestCases.CheckoutAddressTest -->
+        </test-method> <!-- validateTotalAmountMatchesTest -->
+      </class> <!-- com.qa.TestCases.CheckoutTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

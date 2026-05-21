@@ -1,6 +1,7 @@
 package com.qa.TestCases;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.qa.pages.AccountsPage;
@@ -14,6 +15,7 @@ import com.qa.pages.LoginPage;
 import com.qa.pages.ProductDetailsPage;
 import com.qa.pages.ProductsPage;
 import com.qa.pages.ShoppingCartPage;
+import com.qa.util.ExcelUtils;
 
 public class CheckoutAddressTest extends TestBase{
 
@@ -88,5 +90,23 @@ public class CheckoutAddressTest extends TestBase{
 	    	Assert.assertEquals(actualEntries, "Yogesh Sarode, testsg, Airoli, Bristol, 400708.0, United Kingdom");
 	    	
 	    	cpage=capage.clickOnContinueBtn();
+	    }
+	    
+	    @Test(dataProvider = "AddNewAdd")
+	    public void validateAddNewAddressTest(String fn,
+	            String ln,
+	            String company1,
+	            String add,
+	            String city1,
+	            String state,
+	            String postcode1)
+	    {
+	    	setup();
+	    	capage.addNewAddress(fn,ln,company1,add,city1,state,postcode1);
+	    }
+	    
+	    @DataProvider(name="AddNewAdd")
+	    public Object[][] getData() throws Exception {
+	        return ExcelUtils.getExcelData("C:\\Users\\dell\\Desktop\\NewAddress.xlsx", "NewAddress");
 	    }
 }

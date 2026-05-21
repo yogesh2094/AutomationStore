@@ -1,6 +1,7 @@
 package com.qa.TestCases;
 
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.testng.Assert;
@@ -63,7 +64,7 @@ public class CheckoutTest extends TestBase{
 		        ppage.getProductDetailsPage();
 		        pdpage.clickonCartBtn();
 	        
-	        spage.clickonCheckoutBtn();
+	        //spage.clickonCheckoutBtn();
 	        
 	    }
 	 
@@ -114,5 +115,35 @@ public class CheckoutTest extends TestBase{
 	    	Map<String, String> actualValues=cpage.getPaymentDetails();	   
 	    	
 	    	Assert.assertEquals(actualValues, expectedValues);
+	    }
+	    
+	    @Test
+	    public void validateProductsMatchTest()
+	    {
+	    	setup();
+	    	System.out.println(getDriver().getCurrentUrl());
+	    	List<String> shoppingCartProducts=spage.getCartProducts();
+	    	spage.clickonCheckoutBtn();
+	    	List<String> checkoutPageProducts=cpage.getCheckoutProducts();
+	    	
+	    	System.out.println("Shopping Cart Products : " +shoppingCartProducts);
+	    	System.out.println("Checkout Page Products : " +checkoutPageProducts);
+	    	
+	    	Assert.assertEquals(shoppingCartProducts, checkoutPageProducts,"Products are not Matching!!!");
+	    	
+	    }
+	    
+	    @Test
+	    public void validateTotalAmountMatchesTest()
+	    {
+	    	setup();
+	    	double cartTotal=spage.getCartTotal();
+	    	spage.clickonCheckoutBtn();
+	    	double checkoutTotal=cpage.getCheckoutTotal();
+	    	
+	    	System.out.println("Shopping Cart Total : " +cartTotal);
+	    	System.out.println("Checkout page Total : " +checkoutTotal);
+	    	
+	    	Assert.assertEquals(cartTotal, checkoutTotal);
 	    }
 }
