@@ -5,6 +5,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -55,6 +56,15 @@ public class CheckoutPage extends CommonProductPage {
 	
 	@FindBy(xpath="//table[@class='table table-striped table-bordered']/tbody/tr[3]/td[2]")
 	WebElement totalAmount;
+	
+	@FindBy(xpath="//button[@id='checkout_btn']")
+	WebElement checkoutBtn;
+	
+//	@FindBy(xpath="//span[@class='maintext']")
+//	WebElement successText;
+	
+	@FindBy(xpath="//section[@class='mb40']/p[2]")
+	WebElement orderStatus;
 	
 	WaitUtility util;
 	
@@ -157,5 +167,29 @@ public class CheckoutPage extends CommonProductPage {
     public double getCheckoutTotal()
     {
     	return getProductPriceTotal(totalAmount);
+    }
+    
+    public void clickOnConfirmOrderBtn()
+    {
+    	checkoutBtn.click();
+    }
+    
+    //By successText =
+       //     By.xpath("//span[@class='maintext']");
+
+    public String getOrderSuccessMessage()
+    {
+    	String successmsg="";
+    	//util.waitforElementVisible(successText, 10);
+    	
+    	return driver.findElement(By.xpath("//span[@class='maintext']")).getText();    	
+    }
+    
+    public String getOrderCreatedText()
+    {
+    	String createText="";
+    	
+    	createText=orderStatus.getText();
+    	return createText;
     }
 }

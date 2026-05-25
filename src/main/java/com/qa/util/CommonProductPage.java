@@ -58,5 +58,17 @@ public class CommonProductPage {
 		return total;
 	}
 	
+	public int getAllProductsList(List<WebElement> elements)
+	{
+		List<String> products=new ArrayList<>();
+		int noOfRows=0;
+		for(int i=1;i<elements.size();i++) //Rows
+		{
+			System.out.println(noOfRows);
+		}
+		
+		return noOfRows;
+	}
+	
 
 }

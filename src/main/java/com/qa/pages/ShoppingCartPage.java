@@ -53,6 +53,9 @@ WebDriver driver;
 	@FindBy(xpath="//table[@class='table table-striped table-bordered']//td[@class='align_left']/a")
 	List<WebElement> allProductsName;
 	
+	@FindBy(xpath="//div[@class='container-fluid cart-info product-list']/table/tbody/tr")
+	List<WebElement> allProductsRows;
+	
 	//table[@class='table table-striped table-bordered']//td[@class='align_left']/a
 	WaitUtility util;
 	
@@ -184,6 +187,11 @@ WebDriver driver;
     public double getCartTotal()
     {
     	return getProductPriceTotal(grandTotal);
+    }
+    
+    public int getAllProductRows()
+    {
+    	return getAllProductsList(allProductsName);
     }
     	
 }

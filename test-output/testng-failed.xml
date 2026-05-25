@@ -5,8 +5,8 @@
     <classes>
       <class name="com.qa.TestCases.CheckoutTest">
         <methods>
+          <include name="validateOrderSuccessTextTest"/>
           <include name="initialization"/>
-          <include name="validateTotalAmountMatchesTest"/>
         </methods>
       </class> <!-- com.qa.TestCases.CheckoutTest -->
     </classes>

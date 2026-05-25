@@ -145,5 +145,22 @@ public class CheckoutTest extends TestBase{
 	    	System.out.println("Checkout page Total : " +checkoutTotal);
 	    	
 	    	Assert.assertEquals(cartTotal, checkoutTotal);
+	    	
+	    	cpage.clickOnConfirmOrderBtn();
+	    }
+	    
+	    @Test
+	    public void validateOrderSuccessTextTest()
+	    {
+	    	setup();
+	    	spage.clickonCheckoutBtn();
+	    	cpage.clickOnConfirmOrderBtn();
+	    	
+	    	String successmsgtext=cpage.getOrderSuccessMessage();
+	    	Assert.assertEquals(successmsgtext, " Your Order Has Been Processed!");
+	    	
+	    	String actualMsg=cpage.getOrderCreatedText();
+	    	Assert.assertEquals(actualMsg.contains(" has been created!"), "Order creation message not displayed");
+	    	
 	    }
 }

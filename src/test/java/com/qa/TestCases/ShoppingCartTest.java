@@ -122,6 +122,13 @@ public class ShoppingCartTest extends TestBase{
 	    	Assert.assertEquals(calculatedTotal, actualTotal,"Grand Total is not Matching !!");
 	    }
 	    
+	    @Test
+	    public void validateNoofProductRowsTest()
+	    {
+	    	setup();
+	    	spage.getAllProductRows();
+	    }
+	    
 }
 	    	
 	    
